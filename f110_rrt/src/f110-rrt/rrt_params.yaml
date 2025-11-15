@@ -1,0 +1,23 @@
+pose_topic: "/gt_pose"
+scan_topic: "/scan"
+
+CSV_path: "/home/jihyun/f110_rrt/src/f110-rrt/maps/0811.csv"
+
+
+lookahead_distance: 1.5 #(차량이 얼마나 앞을 보고 경로 생성)최적 : 1.5~1.8
+local_lookahead_distance: 1.1 #(차량이 얼마나 앞을 볼 지)최적 : 0.8~1.2 # goal tolerance for path frezzing has to be greater than this 
+
+inflation_radius: 2.5 #최적 : 1.5~2.0
+
+max_rrt_iters: 2500 #최적 : 3000~5000
+max_expansion_distance: 0.2 #(최대 확장 거리)최적 : 0.2~0.3
+search_radius: 0.5 #최적 : 0.3~0.5
+collision_checking_points: 12 #(샘플링 간격/충돌 체크 포인트)최적 : 12~15
+
+goal_tolerance: 0.15 #(목표 허용 오차)최적 : 0.1~0.2
+path_reach_tol: 0.1 #(경로 도달 허용 오차)최적 : 0.1~0.2
+
+high_speed: 8.0 #최적 : 3.0 이하
+medium_speed: 6.5 #최적 : 2.0~2.5
+low_speed: 3.4 #최적 : 1.5~2.0
+
